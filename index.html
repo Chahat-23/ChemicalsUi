@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Supplies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Chemical supplies</h1>
+            <div class="toolbar">
+                <button id="addRow" title="Add Row"><i class="fas fa-plus"></i></button>
+                <button id="moveDown" title="Move Down"><i class="fas fa-arrow-down"></i></button>
+                <button id="moveUp" title="Move Up"><i class="fas fa-arrow-up"></i></button>
+                <button id="deleteRow" title="Delete Row"><i class="fas fa-trash"></i></button>
+                <button id="undoChanges" title="Undo Changes"><i class="fas fa-undo"></i></button>
+                <button id="saveChanges" title="Save Changes"><i class="fas fa-save"></i></button>
+            </div>
+        </div>
+        <table id="chemicalsTable">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="header-content">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="selectAll">
+                                <label for="selectAll"></label>
+                            </div>
+                            <span>Chemical name</span>
+                        </div>
+                    </th>
+                    <th>Vendor</th>
+                    <th>Density<br><span class="unit">g/m³</span></th>
+                    <th>Viscosity<br><span class="unit">m²/s</span></th>
+                    <th>Packaging</th>
+                    <th>Pack size</th>
+                    <th>Unit</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

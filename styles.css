@@ -1,0 +1,334 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.toolbar {
+    display: flex;
+}
+
+.toolbar button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 12px;
+    color: #0407c2;
+}
+
+.toolbar button:disabled {
+    color: #6c757d; 
+    cursor: not-allowed;
+}
+
+#addRow {
+    background-color: #0407c2;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#deleteRow {
+    color: #dc3545; 
+}
+
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d3d1d1;
+}
+
+thead, tr {
+    background-color: #f5f3f3;
+}
+
+th:first-child, td:first-child {
+    border-right: 1px solid #ddd;
+}
+
+th {
+    font-weight: normal;
+    padding: 10px;
+    text-align: left;
+}
+
+thead th {
+    height: 50px;
+    vertical-align: middle;
+}
+
+tbody, td {
+    border: none;
+}
+
+td {
+    padding: 10px;
+}
+
+.unit {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tr:nth-child(even).selected,
+tr:nth-child(odd).selected {
+    background-color: #dadaf9 !important;
+}
+
+tr.selected .custom-checkbox label::before {
+    color: #0407c2; 
+}
+
+tr.selected td:first-child .custom-checkbox label::before {
+        color: #0407c2;
+}
+
+tr.selected td:first-child .custom-checkbox input:checked + label::after {
+    color: #699fd1;
+}
+
+.edit-input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox label::before {
+    content: "\2714";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    color: #aaa;
+}
+
+.custom-checkbox input:checked + label::before {
+    color: #0407c2; 
+    border-color: #0407c2; 
+}
+
+#chemicalsTable th:first-child {
+    min-width: 200px;
+}
+
+#chemicalsTable td:first-child {
+    display: flex;
+    align-items: center;
+}
+
+#chemicalsTable td:first-child .custom-checkbox {
+    margin-right: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content .custom-checkbox {
+    margin-right: 10px;
+}
+
+#chemicalsTable th:first-child,
+#chemicalsTable td:first-child {
+    min-width: 250px;
+}
+
+#chemicalsTable, td {
+    background-color: #fff;
+}
+
+#chemicalsTable td:first-child {
+    display: flex;
+    align-items: center;
+}
+
+#chemicalsTable td:first-child .custom-checkbox {
+    margin-right: 10px;
+}
+
+#chemicalsTable th,
+#chemicalsTable td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.header-content, .cell-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content .custom-checkbox,
+.cell-content .custom-checkbox {
+    margin-right: 10px;
+}
+
+.header-content span,
+.cell-content span {
+    margin-right: 10px;
+}
+
+#chemicalsTable td, #chemicalsTable th {
+    border: none;
+    padding: 8px;
+}
+
+#chemicalsTable tbody td:nth-child(3), /* Density */
+#chemicalsTable tbody td:nth-child(4), /* Viscosity */
+#chemicalsTable tbody td:nth-child(8)  /* Quantity */ {
+    border: 1px solid #d3d1d1; 
+    background-color: #ffffff;
+    text-align: right;
+    padding: 8px;
+}
+
+#chemicalsTable {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+#chemicalsTable thead {
+    border-bottom: 2px solid #d3d1d1;
+}
+
+#chemicalsTable tbody td {
+    background-color: #ffffff; 
+}
+
+#chemicalsTable tbody tr.selected td {
+    background-color: #e6f3ff; 
+}
+
+#chemicalsTable tbody tr:not(.selected) td {
+    color: #333;
+}
+
+#chemicalsTable tbody {
+    border-spacing: 2px; }
+
+#chemicalsTable td, #chemicalsTable th {
+    border: none;
+    padding: 8px;
+}
+
+#chemicalsTable th:first-child,
+#chemicalsTable td:first-child {
+    border-right: 1px solid #ddd; 
+}
+
+#chemicalsTable {
+    border-collapse: separate;
+    border-spacing: 1px; 
+}
+
+#chemicalsTable thead {
+    border-bottom: 2px solid #d3d1d1;
+}
+
+#chemicalsTable td .value {
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+#chemicalsTable td .unit {
+    font-size: 0.8em;
+    color: #666;
+}
+
+#chemicalsTable tbody td:nth-child(3),
+#chemicalsTable tbody td:nth-child(4),
+#chemicalsTable tbody td:nth-child(8) {
+    text-align: right; 
+}
+
+#chemicalsTable tbody tr.selected td.editable:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+#chemicalsTable tbody td.editing {
+    background-color: #ffffff !important;
+    border: 2px solid #007bff !important;
+    padding: 6px; /* Reduced to account for thicker border */
+}
+
+#chemicalsTable tbody td.editing .edit-input {
+    width: calc(100% - 40px); /* Adjust based on your unit width */
+    border: none;
+    padding: 2px;
+    text-align: right;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+#chemicalsTable tbody tr.selected td {
+    background-color: #e6f3ff;
+}
+
+#chemicalsTable tbody tr.selected td:nth-child(3),
+#chemicalsTable tbody tr.selected td:nth-child(4),
+#chemicalsTable tbody tr.selected td:nth-child(8) {
+    cursor: pointer;
+}

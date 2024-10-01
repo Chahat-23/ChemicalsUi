@@ -1,0 +1,17 @@
+[
+    { "id": 1, "chemicalName": "Sodium Chloride", "vendor": "ChemCo", "density": 2.16, "viscosity": 1.93, "packaging": "Bag", "packSize": 25, "unit": "kg", "quantity": 100 },
+    { "id": 2, "chemicalName": "Hydrochloric Acid", "vendor": "AcidSupplies", "density": 1.19, "viscosity": 1.9, "packaging": "Bottle", "packSize": 1, "unit": "L", "quantity": 50 },
+    { "id": 3, "chemicalName": "Ethanol", "vendor": "PureChemicals", "density": 0.789, "viscosity": 1.2, "packaging": "Drum", "packSize": 200, "unit": "L", "quantity": 5 },
+    { "id": 4, "chemicalName": "Sulfuric Acid", "vendor": "AcidSupplies", "density": 1.84, "viscosity": 26.7, "packaging": "Bottle", "packSize": 2.5, "unit": "L", "quantity": 20 },
+    { "id": 5, "chemicalName": "Acetone", "vendor": "SolventWorld", "density": 0.79, "viscosity": 0.32, "packaging": "Can", "packSize": 5, "unit": "L", "quantity": 30 },
+    { "id": 6, "chemicalName": "Methanol", "vendor": "PureChemicals", "density": 0.792, "viscosity": 0.59, "packaging": "Drum", "packSize": 100, "unit": "L", "quantity": 2 },
+    { "id": 7, "chemicalName": "Hydrogen Peroxide", "vendor": "OxyChem", "density": 1.11, "viscosity": 1.25, "packaging": "Bottle", "packSize": 500, "unit": "mL", "quantity": 40 },
+    { "id": 8, "chemicalName": "Nitric Acid", "vendor": "AcidSupplies", "density": 1.51, "viscosity": 0.75, "packaging": "Bottle", "packSize": 1, "unit": "L", "quantity": 25 },
+    { "id": 9, "chemicalName": "Potassium Hydroxide", "vendor": "AlkaliCo", "density": 2.12, "viscosity": 5.7, "packaging": "Bag", "packSize": 10, "unit": "kg", "quantity": 15 },
+    { "id": 10, "chemicalName": "Toluene", "vendor": "SolventWorld", "density": 0.87, "viscosity": 0.59, "packaging": "Can", "packSize": 20, "unit": "L", "quantity": 8 },
+    { "id": 11, "chemicalName": "Glycerol", "vendor": "BioSupplies", "density": 1.26, "viscosity": 1412, "packaging": "Bottle", "packSize": 1, "unit": "L", "quantity": 60 },
+    { "id": 12, "chemicalName": "Acetic Acid", "vendor": "AcidSupplies", "density": 1.05, "viscosity": 1.22, "packaging": "Bottle", "packSize": 2, "unit": "L", "quantity": 35 },
+    { "id": 13, "chemicalName": "Isopropyl Alcohol", "vendor": "PureChemicals", "density": 0.786, "viscosity": 2.04, "packaging": "Can", "packSize": 10, "unit": "L", "quantity": 12 },
+    { "id": 14, "chemicalName": "Sodium Hydroxide", "vendor": "AlkaliCo", "density": 2.13, "viscosity": 79, "packaging": "Bag", "packSize": 25, "unit": "kg", "quantity": 6 },
+    { "id": 15, "chemicalName": "Hexane", "vendor": "SolventWorld", "density": 0.659, "viscosity": 0.3, "packaging": "Can", "packSize": 5, "unit": "L", "quantity": 18 }
+]
